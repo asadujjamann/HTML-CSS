@@ -5,38 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
+    <!-- Contact Area == Start -->
     <section class="contact-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-12">
                     <div class="info-area">
-                        <div class="info-heading">
-                            <img src="" alt="">
+                        <div class="info-heading text-center">
+                            <div class="img-box">
+                                <img src="./img/asad.png" alt="Md Asadujjaman Sabuj">
+                            </div>
                             <h2>Md. Asadujjaman</h2>
                             <h4>Web Developer</h4>
                         </div>
-                        <div class="info-description">
-                            <div class="about-me">
-
+                        <div class="info-description d-flex">
+                            <div class="about-me w-sm-50 w-100">
+                                <h3>About me</h3>
+                                <p>Asad is a web developer with over 3 years of experience. He is skilled in a variety of web development technologies, including HTML, CSS, JavaScript, PHP, and MySQL. He has a strong understanding of web design principles and can create beautiful and user-friendly websites.</p>
+                                <!-- <p>Asad is also proficient in WordPress development. He is a highly motivated and results-oriented individual who is always looking for new challenges. Asad is passionate about web development and enjoys working with clients to create websites that meet their needs.</p> -->
                             </div>
-                            <div class="interests">
-                                
+                            <div class="skills w-sm-50 w-100">
+                                <h3>Skills</h3>
+                                <ul>
+                                    <li>HTML, CSS, JavaScript, PHP, MySQL</li>
+                                    <li>Web design principles</li>
+                                    <li>WordPress development</li>
+                                    <li>Custom WordPress themes and plugins</li>
+                                    <li>Motivated and results-oriented</li>
+                                    <li>Passionate about web development</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>  <!-- /.col -->
                 <div class="col-md-7 col-12">
                     <div class="form-area">
+                        <h2>Stay Connected</h2>
+                        <form action="#!">
+                            <div class="form-group">
+                                <label for="fname">First Name</label>
+                                <input id="fname" type="text" placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name</label>
+                                <input id="lname" type="text" placeholder="Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" placeholder="your@emample.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input id="phone" type="text" placeholder="+8801714946954">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input id="subject" type="text" placeholder="Wanna hire you!">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" placeholder="Describe your thought."></textarea>
+                            </div>
 
+                            <button type="submit">Send</button>
+                        </form>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div>  <!-- /.col -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
     </section>
+    <!-- Contact Area == End -->
     
 </body>
 </html>
